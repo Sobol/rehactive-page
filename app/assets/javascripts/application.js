@@ -20,6 +20,7 @@
 $(function() {
   $('#myGallery').galleryView({
     panel_width: 550,
-    panel_height: 330
+    panel_height: 330,
+    autoplay: true
   });
 });
