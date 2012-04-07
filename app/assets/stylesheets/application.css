@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require gallery
  *= require default
  *= require gmaps4rails
  *= require jquery.galleryview-3.0-dev

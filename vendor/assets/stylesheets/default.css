@@ -202,10 +202,9 @@ header {
 	color: #232F01;
 }
 
-.post .title a {
+.post .title {
 	letter-spacing: -1px;
 	text-decoration: none;
-	text-transform: lowercase;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 32px;
