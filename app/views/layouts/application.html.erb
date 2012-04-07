@@ -38,9 +38,10 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <%= yield :scripts %>
 </head>
 
-<body>
+<body class="<%= controller_name %>-controller <%= action_name %>-action">
   <header>
     <section>
       <%= yield :header %>

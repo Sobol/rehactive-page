@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
   def offer
   end
 
-  def visits
+  def map
   end
 
   def contact

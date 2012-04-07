@@ -1,0 +1,14 @@
+<% content_for :header do %>
+  <%= render :partial => "shared/header_menu" %>
+<%end%>
+
+<div id="map-bg">
+	<div id="map-bgtop">
+		<div id="map-bgbtm">
+      <% @map = '[{"lng":"23.155302","lat":"53.146046"}]'%>
+      <%= gmaps("markers" => {"data" => @map}, "map_options" => {"processing" => "json", "auto_zoom" => false, "zoom" => 16}) %>
+		</div>
+	</div>
+</div>
+
+

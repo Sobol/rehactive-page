@@ -11,6 +11,7 @@
  *= require_self
  *= require gallery
  *= require default
+ *= require gmaps4rails
  *= require jquery.galleryview-3.0-dev
  *= require_tree .
 */
@@ -25,4 +26,14 @@
 	line-height: normal;
 	color: #757E82;
 	font-size: 13px;
+}
+
+#gmaps {
+  border-color: #CCCCCC #CCCCCC #999999;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 2px 5px rgba(64, 64, 64, 0.1);
+  padding: 6px;
+  width: 180px;
+  margin-left: -5px;
 }

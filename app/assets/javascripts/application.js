@@ -10,6 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+//= require gmaps4rails/bing.js
+//= require gmaps4rails/googlemaps.js
+//= require gmaps4rails/mapquest.js
+//= require gmaps4rails/openlayers.js
+//= require gmaps4rails/all_apis.js
 //= require jquery
 //= require jquery.timers-1.2
 //= require jquery.easing.1.3

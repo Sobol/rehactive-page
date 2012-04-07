@@ -168,44 +168,6 @@ header {
 	letter-spacing: -1px;
 }
 
-/* Search */
-
-#search {
-	padding: 0px 0px 40px 0px;
-}
-
-#search form {
-	margin: 0;
-	padding: 0;
-}
-
-#search fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
-#search input {
-	float: left;
-	font: 11px Tahoma, Geneva, sans-serif;
-	padding: 2px 2px;
-}
-
-#search-text {
-	width: 100px;
-	border: 1px solid #000000;
-	color: #000000;
-}
-
-#search-submit {
-	height: 21px;
-	margin-left: 10px;
-	padding: 0px 2px;
-	border: none;
-	background: #E71810;
-	color: #FFFFFF;
-}
-
 /* Page */
 
 .main {
@@ -365,7 +327,7 @@ footer {
   width: 100%;
   bottom: 0;
   clear: both;
-  position: fixed;
+  position: relative;
 }
 
 footer section {
@@ -388,4 +350,17 @@ footer a {
 footer a:hover {
 	text-decoration: none;
 	color: #F90542;
+}
+
+#gallery-bg {
+	background: url(img05.jpg) repeat-y left top;
+}
+
+#gallery-bgtop {
+	background: url(img04.jpg) no-repeat left top;
+}
+
+#gallery-bgbtm {
+	background: url(img06.jpg) no-repeat left bottom;
+	padding: 50px 40px;
 }
