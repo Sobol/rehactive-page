@@ -55,3 +55,8 @@
 .hidden {
   display: none;
 }
+
+#logo a img {
+  width: 185px;
+  padding: 0 40px;
+}
