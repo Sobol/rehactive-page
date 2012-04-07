@@ -57,6 +57,7 @@
 }
 
 #logo a img {
-  width: 185px;
+  margin-top: -7px;
+  width: 195px;
   padding: 0 40px;
 }
