@@ -1,0 +1,23 @@
+<div id="logo">
+	<h1><a href="#">Vertebrate </a></h1>
+	<h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
+</div>
+<div id="menu">
+  <ul>
+    <li id="news" class="<%= 'active' if params[:controller]=='news'%>">
+      <%= link_to "Nowości", "" %>
+    </li>
+    <li id="offer" class="<%= 'active' if params[:action]=='offer'%>">
+      <%= link_to "Oferta", "" %>
+    </li>
+    <li id="about" class="<%= 'active' if params[:action]=='about'%>">
+      <%= link_to "O mnie", "" %>
+    </li>
+    <li id="visits" class="<%= 'active' if params[:action]=='visits'%>">
+      <%= link_to "Wizyty", "" %>
+    </li>
+    <li id="contact" class="<%= 'active' if params[:action]=='contact'%>">
+      <%= link_to "Kontakt", "" %>
+    </li>
+  </ul>
+</div>
