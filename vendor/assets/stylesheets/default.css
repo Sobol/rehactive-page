@@ -180,6 +180,7 @@ header {
 #content {
 	float: left;
 	width: 630px;
+	min-height: 720px;
 }
 
 .post {
