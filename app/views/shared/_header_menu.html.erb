@@ -5,19 +5,19 @@
 <div id="menu">
   <ul>
     <li id="news" class="<%= 'active' if params[:controller]=='news'%>">
-      <%= link_to "Nowości", "" %>
+      <%= link_to "Nowości", root_path %>
     </li>
     <li id="offer" class="<%= 'active' if params[:action]=='offer'%>">
-      <%= link_to "Oferta", "" %>
+      <%= link_to "Oferta", offer_page_path %>
     </li>
     <li id="about" class="<%= 'active' if params[:action]=='about'%>">
-      <%= link_to "O mnie", "" %>
+      <%= link_to "O mnie", about_page_path %>
     </li>
     <li id="visits" class="<%= 'active' if params[:action]=='visits'%>">
-      <%= link_to "Wizyty", "" %>
+      <%= link_to "Wizyty", visits_page_path %>
     </li>
     <li id="contact" class="<%= 'active' if params[:action]=='contact'%>">
-      <%= link_to "Kontakt", "" %>
+      <%= link_to "Kontakt", contact_page_path %>
     </li>
   </ul>
 </div>

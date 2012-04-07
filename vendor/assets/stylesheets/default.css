@@ -12,7 +12,6 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 body {
 	background: #FFFFFF url(img01.jpg) repeat-x left top;
-	text-align: justify;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 11px;
 	color: #757E82;
@@ -130,6 +129,7 @@ header {
 #menu a {
 	display: block;
 	float: left;
+	outline: 0;
 	height: 55px;
 	margin-right: 1px;
 	padding: 35px 20px 0px 20px;
@@ -295,7 +295,7 @@ header {
 
 #sidebar-bgbtm {
 	background: url(img09.jpg) no-repeat left bottom;
-	padding: 40px 40px 20px 40px;
+	padding: 40px;
 }
 
 #sidebar ul {
@@ -329,8 +329,7 @@ header {
 
 #sidebar h2 {
 	margin: 0px;
-	padding: 0px 0px 20px 0px;
-	text-transform: lowercase;
+	padding: 0px 0px 10px 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 180%;
 	font-weight: normal;
@@ -340,12 +339,6 @@ header {
 #sidebar h3 {
 	font-size: 77%;
 	color: #454E55;
-}
-
-#sidebar p {
-	margin: 0;
-	line-height: normal;
-	color: #D4C792;
 }
 
 #sidebar a {
@@ -368,8 +361,11 @@ header {
 
 footer {
 	background: #F7F7F7 url(img03.jpg) repeat-x left top;
-	width: 100%;
 	padding: 20px 0px;
+  width: 100%;
+  bottom: 0;
+  clear: both;
+  position: fixed;
 }
 
 footer section {

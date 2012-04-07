@@ -13,3 +13,15 @@
  *= require default
  *= require_tree .
 */
+
+
+.bold {
+  font-weight: 700;
+}
+
+#sidebar p {
+	margin-bottom: 10px;
+	line-height: normal;
+	color: #757E82;
+	font-size: 13px;
+}

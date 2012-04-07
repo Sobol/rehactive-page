@@ -15,5 +15,4 @@
 //= require_tree .
 
 $(function() {
-  $(".main").height($(window).height());
 });
