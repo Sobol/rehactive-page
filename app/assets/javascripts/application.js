@@ -28,4 +28,14 @@ $(function() {
     panel_height: 330,
     autoplay: true
   });
+  
+  $(".more").click(function(e){
+    e.preventDefault();
+
+    $(this).parent().parent().parent().find(".entry").find(".hidden").slideToggle();
+    if ($(this).html() == "Mniej")
+      $(this).html("Więcej");
+    else
+      $(this).html("Mniej");
+  });
 });

@@ -36,3 +36,22 @@
   width: 180px;
   margin-left: -5px;
 }
+
+.about {
+  font-size: 12px;
+}
+
+ ul.offert-ul, 
+.about ul {
+  padding-left: 35px;
+  margin-bottom: 40px;
+}
+
+ ul.offert-ul li,
+.about ul li {
+  list-style-type:circle !important;
+}
+
+.hidden {
+  display: none;
+}
