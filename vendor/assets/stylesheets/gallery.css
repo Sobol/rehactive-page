@@ -1,14 +1,14 @@
 
 #gallery-bg {
-	background: url(images/img05.jpg) repeat-y left top;
+	background: url(img05.jpg) repeat-y left top;
 }
 
 #gallery-bgtop {
-	background: url(images/img04.jpg) no-repeat left top;
+	background: url(img04.jpg) no-repeat left top;
 }
 
 #gallery-bgbtm {
-	background: url(images/img06.jpg) no-repeat left bottom;
+	background: url(img06.jpg) no-repeat left bottom;
 	padding: 50px 40px;
 }
 

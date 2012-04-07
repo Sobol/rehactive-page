@@ -11,8 +11,15 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery.timers-1.2
+//= require jquery.easing.1.3
 //= require jquery_ujs
+//= require jquery.galleryview-3.0-dev
 //= require_tree .
 
 $(function() {
+  $('#myGallery').galleryView({
+    panel_width: 550,
+    panel_height: 330
+  });
 });
