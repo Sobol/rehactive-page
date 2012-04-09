@@ -1,0 +1,34 @@
+<% content_for :header do %>
+  <%= render :partial => "shared/header_menu" %>
+<%end%>
+
+<% content_for :right_sidebar do %>
+  <%= render :partial => "shared/right_sidebar" %>
+<%end%>
+
+<% content_for :head do %>
+  <meta name="description" content="Aktualności firmy Rehactive"/>
+<% end %>
+
+<% @news.each do |n| %>
+  <div class="post">
+		<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 class="title"><a href="<%= news_path(n)%>"><%= n.title%> </a></h2>
+				<p class="byline">Dodano <%= n.created_at %></p>
+				<div class="entry">
+					<p><%= n.content_short.html_safe %></p>
+				</div>
+				<div class="meta">
+					<p><a href="<%= news_path(n)%>" class="news-show-link">Szczegóły</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<% end %>
+
+<% unless @news.empty? -%>
+  <%= link_to_top %>
+  <%= will_paginate @news %>
+<% end -%>
+

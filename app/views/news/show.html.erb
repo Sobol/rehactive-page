@@ -1,0 +1,23 @@
+<% content_for :header do %>
+  <%= render :partial => "shared/header_menu" %>
+<%end%>
+
+<% content_for :right_sidebar do %>
+  <%= render :partial => "shared/right_sidebar" %>
+<%end%>
+
+<% content_for :head do %>
+  <meta name="description" content="<%= 'Rehactive - ' + @news.title%>"/>
+<% end %>
+
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><%= @news.title%></h2>
+			<p class="byline">Dodano <%= @news.created_at %></p>
+			<div class="entry">
+				<p><%= @news.content.html_safe %></p>
+			</div>
+		</div>
+	</div>
+</div>

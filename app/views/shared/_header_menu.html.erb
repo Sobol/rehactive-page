@@ -4,7 +4,7 @@
 <div id="menu">
   <ul>
     <li id="news" class="<%= 'active' if params[:controller]=='news'%>">
-      <%= link_to "Nowości", root_path %>
+      <%= link_to "Aktualności", news_index_path %>
     </li>
     <li id="offer" class="<%= 'active' if params[:action]=='offer'%>">
       <%= link_to "Oferta", offer_page_path %>

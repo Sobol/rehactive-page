@@ -1,6 +1,7 @@
 RehactivePage::Application.routes.draw do
 
   resources :contacts, only: [:new, :create, :show]
+  resources :news, only: [:index, :show]
 
   match 'about' => 'static_pages#about', :as => :about_page
   match 'offer' => 'static_pages#offer', :as => :offer_page

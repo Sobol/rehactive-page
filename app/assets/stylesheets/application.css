@@ -91,3 +91,23 @@
   outline: 0;
   background-image: url(my-fav-active.png);
 }
+
+a.back-to-top {
+  text-decoration: none;
+  color: #6d6d6d !important;
+  display: block;
+  margin: 40px 0 15px 20px;
+  height: 17px;
+  float: left;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  vertical-align: middle;
+  position: relative !important;
+}
+
+a.back-to-top img {
+  display: block;
+  float: left;
+  margin-top: -3px;
+}

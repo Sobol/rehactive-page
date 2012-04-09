@@ -1,10 +1,3 @@
-
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -21,24 +14,9 @@ h1, h2, h3 {
 	color: #AA2808;
 }
 
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
 p, blockquote, ul, ol {
 	margin-bottom: 20px;
 	line-height: 2em;
-}
-
-p {
-}
-
-blockquote {
 }
 
 ul, ol, li {
@@ -55,11 +33,6 @@ a {
 a:hover {
 	text-decoration: none;
 	color: #F40C42;
-}
-
-/* Wrapper */
-
-#wrapper {
 }
 
 /* Header */
@@ -143,7 +116,7 @@ header {
 }
 
 #news a{
-  width: 90px;
+  width: 130px;
 }
 
 #offer a{
@@ -202,6 +175,7 @@ header {
 	color: #232F01;
 }
 
+.post .title a,
 .post .title {
 	letter-spacing: -1px;
 	text-decoration: none;
@@ -211,17 +185,12 @@ header {
 	color: #3A3D40;
 }
 
-.post .entry {
-}
-
 .post img {
 	float: left;
 	padding: 15px 0px;
 }
 
-.post .meta {
-}
-
+.post .news-show-link,
 .post .more {
 	display: block;
 	width: 115px;
@@ -312,11 +281,6 @@ header {
 #sidebar a:hover {
 	text-decoration: underline;
 	color: #363636;
-}
-
-/* Submenu */
-
-#submenu {
 }
 
 /* Footer */

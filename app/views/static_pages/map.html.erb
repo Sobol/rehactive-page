@@ -2,6 +2,11 @@
   <%= render :partial => "shared/header_menu" %>
 <%end%>
 
+
+<% content_for :head do %>
+  <meta name="description" content="Rehactive - mapa dojazdu"/>
+<% end %>
+
 <div id="map-bg">
 	<div id="map-bgtop">
 		<div id="map-bgbtm">
