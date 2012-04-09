@@ -1,0 +1,63 @@
+<% content_for :header do %>
+  <%= render :partial => "shared/header_menu" %>
+<%end%>
+
+<% content_for :right_sidebar do %>
+  <%= render :partial => "shared/right_sidebar" %>
+<%end%>
+
+<% content_for :head do %>
+  <meta name="description" content="Skontaktuj się ze mną."/>
+<% end %>
+
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title">Kontakt</h2><br/>
+      <% unless @contact.errors.empty? %>
+        <div class="alert">
+          <h2>Errors occured</h2>
+          <ul>
+            <% @contact.errors.full_messages.each do |msg| %>
+              <li>
+              <%= msg %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+			<div class="entry">
+        <div id="contact" class ="common-div-form">
+          <%= form_for @contact do |f| %>
+          <table>
+            <tr>
+              <td><%= f.label :name, 'Imię, Nazwisko/Nazwa firmy:' %></td>
+            </tr>
+            <tr>
+              <td><%= f.text_field :name %></td>
+            </tr>
+            <tr>
+              <td><%= f.label :email, 'Email:' %></td>
+            </tr>
+            <tr>
+              <td><%= f.text_field :email %></td>
+            </tr>
+            <tr>
+              <td><%= f.label :content, 'Treść:', :class=>"news-form-content" %></td>
+            </tr>
+              <td><%= f.text_area :content, :rows => 13, :cols => 42 %><br /></td>
+            </tr>
+            <tr>
+              <td>
+                <%= f.submit "Wyślij", class:"user-submit" %>
+              </td>
+            </tr>
+          </table>
+        <% end %>
+        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
