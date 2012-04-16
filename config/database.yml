@@ -1,5 +1,5 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   database: rehactive_development
   pool: 5
   timeout: 5000
@@ -9,7 +9,7 @@ development:
   host: localhost
 
 test:
-  adapter: mysql2
+  adapter: postgresql
   database: rehactive_test
   pool: 5
   timeout: 5000
@@ -19,7 +19,7 @@ test:
   host: localhost
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   database: rehactive_production
   pool: 5
   timeout: 5000

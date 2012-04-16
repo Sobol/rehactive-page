@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
-gem 'sqlite3'
 gem 'gmaps4rails'
-gem 'mysql2'
+gem 'pg'
 gem 'will_paginate'
 
 group :assets do
