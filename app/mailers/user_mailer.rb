@@ -6,6 +6,7 @@ class UserMailer < ActionMailer::Base
      to: "rehactive@gmail.com" ,
      subject: @contact.name + " zkontaktował się z tobą ze strony www.rehactivce.com",
      from: @contact.email,
+     body: @contact.content,
      reply_to: @contact.email
     })
   end
