@@ -4,6 +4,7 @@ gem 'rails', '3.2.0'
 gem 'gmaps4rails'
 gem 'pg'
 gem 'will_paginate'
+gem 'rack-rewrite'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
