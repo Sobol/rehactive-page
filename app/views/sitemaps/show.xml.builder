@@ -21,27 +21,27 @@ xml.urlset :xmlns => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
   end
   
   xml.url do
-    xml.loc about_page_path
+    xml.loc about_page_url
   end
   
   xml.url do
-    xml.loc new_contact_path
+    xml.loc new_contact_url
   end
   
   xml.url do
-    xml.loc offer_page_path
+    xml.loc offer_page_url
   end
   
   xml.url do
-    xml.loc offer_page_path
+    xml.loc offer_page_url
   end
   
   xml.url do
-    xml.loc map_page_path
+    xml.loc map_page_url
   end
   
   xml.url do
-    xml.loc news_index_path
+    xml.loc news_index_url
     if @entries.present?
       xml.lastmod @entries.last.updated_at.to_date
     end
