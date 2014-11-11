@@ -74,7 +74,7 @@
   font-family: proxima-nova-n7, proxima-nova, sans-serif;
   font-weight: 700;
   font-size: 12px;
-  background-image: url(my-fav.png);
+  background-image: image-url(my-fav.png);
   position: relative;
   outline: 0;
   -moz-border-radius: 10px;
@@ -86,14 +86,14 @@
   border: 1px solid #b3b3b3;
   color: #43474a;
   outline: 0;
-  background-image: url(my-fav-hover.png);
+  background-image: image-url(my-fav-hover.png);
 }
 
 .user-submit:active {
   border: 1px solid #dfdfdf;
   color: #43474a;
   outline: 0;
-  background-image: url(my-fav-active.png);
+  background-image: image-url(my-fav-active.png);
 }
 
 a.back-to-top {

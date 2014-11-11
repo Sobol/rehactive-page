@@ -28,14 +28,14 @@
 }
 
 #map-bg {
-	background: url(img05-map.jpg) repeat-y left top;
+	background: image-url(img05-map.jpg) repeat-y left top;
 }
 
 #map-bgtop {
-	background: url(img04-map.jpg) no-repeat left top;
+  background: image-url(img04-map.jpg) no-repeat left top;
 }
 
 #map-bgbtm {
-	background: url(img06-map.jpg) no-repeat left bottom;
+	background: image-url(img06-map.jpg) no-repea:t left bottom;
 	padding: 50px 40px;
 }
