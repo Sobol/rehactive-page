@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #FFFFFF url(img01.jpg) repeat-x left top;
+	background: #FFFFFF image-url(img01.jpg) repeat-x left top;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 11px;
 	color: #757E82;
@@ -157,15 +157,15 @@ header {
 }
 
 .post {
-	background: url(img05.jpg) repeat-y left top;
+	background: image-url(img05.jpg) repeat-y left top;
 }
 
 .post-bgtop {
-	background: url(img04.jpg) no-repeat left top;
+	background: image-url(img04.jpg) no-repeat left top;
 }
 
 .post-bgbtm {
-	background: url(img06.jpg) no-repeat left bottom;
+	background: image-url(img06.jpg) no-repeat left bottom;
 	padding: 50px 40px 30px 40px;
 }
 
@@ -196,7 +196,7 @@ header {
 	width: 115px;
 	height: 32px;
 	padding: 8px 0px 0px 0px;
-	background: url(img12.jpg) no-repeat left top;
+	background: image-url(img12.jpg) no-repeat left top;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -216,16 +216,16 @@ header {
 #sidebar {
 	float: right;
 	width: 260px;
-	background: url(img08.jpg) repeat-y left top;
+	background: image-url(img08.jpg) repeat-y left top;
 	font-size: 11px;
 }
 
 #sidebar-bgtop {
-	background: url(img07.jpg) no-repeat left top;
+	background: image-url(img07.jpg) no-repeat left top;
 }
 
 #sidebar-bgbtm {
-	background: url(img09.jpg) no-repeat left bottom;
+	background: image-url(img09.jpg) no-repeat left bottom;
 	padding: 40px;
 }
 
@@ -249,12 +249,12 @@ header {
 	margin: 0;
 	padding: 7px 0px;
 	border: none;
-	background: url(img10.jpg) repeat-x left bottom;
+	background: image-url(img10.jpg) repeat-x left bottom;
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
 #sidebar li li a {
-	background: url(img11.jpg) no-repeat left 3px;
+	background: image-url(img11.jpg) no-repeat left 3px;
 	padding-left: 20px;
 }
 
@@ -286,7 +286,7 @@ header {
 /* Footer */
 
 footer {
-	background: #F7F7F7 url(img03.jpg) repeat-x left top;
+	background: #F7F7F7 image-url(img03.jpg) repeat-x left top;
 	padding: 20px 0px;
   width: 100%;
   bottom: 0;
@@ -317,14 +317,14 @@ footer a:hover {
 }
 
 #gallery-bg {
-	background: url(img05.jpg) repeat-y left top;
+	background: image-url(img05.jpg) repeat-y left top;
 }
 
 #gallery-bgtop {
-	background: url(img04.jpg) no-repeat left top;
+	background: image-url(img04.jpg) no-repeat left top;
 }
 
 #gallery-bgbtm {
-	background: url(img06.jpg) no-repeat left bottom;
+	background: image-url(img06.jpg) no-repeat left bottom;
 	padding: 50px 40px;
 }
