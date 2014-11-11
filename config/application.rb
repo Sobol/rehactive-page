@@ -46,7 +46,7 @@ module RehactivePage
     config.assets.version = '1.0'
     config.assets.initialize_on_precompile = false
     config.active_record.whitelist_attributes = false
-
+    config.assets.precompile += %w( admin.css )
 
     config.paperclip_defaults = {
       :storage => :s3,
