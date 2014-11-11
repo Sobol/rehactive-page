@@ -116,6 +116,7 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
+    non-stupid-digest-assets (1.0.4)
     orm_adapter (0.5.0)
     paperclip (4.1.1)
       activemodel (>= 3.0.0)
@@ -248,6 +249,7 @@ DEPENDENCIES
   letter_opener
   livereload
   nokogiri
+  non-stupid-digest-assets
   paperclip
   pg
   poltergeist

@@ -18,6 +18,7 @@ gem 'ckeditor'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'protected_attributes'
+gem "non-stupid-digest-assets"
 
 group :doc do
   gem 'sdoc', require: false
