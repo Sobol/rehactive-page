@@ -1,0 +1,37 @@
+<div class="news-form">
+  <%= form_for [:admin, @news]  do |f| %>
+    <div>
+      <%= f.label :title, 'Tytuł:' %>
+      <%= f.text_field :title %>
+      <br/>
+      <br/>
+    </div>
+    <div>
+      <%= hidden_field_tag "news_id", params[:id] || "" %>
+    </div>
+    <div>
+      <%= f.label :content_short, 'Podgląd Artykułu:' %>
+      <br/>
+      <br/>
+      <%= f.cktext_area :content_short %>
+    </div>
+
+    <div>
+      <%= f.label :body, 'Artykuł:' %>
+      <br/>
+      <br/>
+      <%= f.cktext_area :content %>
+    </div>
+
+    <br/>
+    <div>
+      <%= f.submit :'data-disable-with' => 'Zapisuje...', class: 'btn btn-primary' %>
+      <% if !@news.new_record?%>
+        <%= link_to 'Usuń artykuł', admin_news_path(@news), method: :delete, data: {confirm: "Czy napewno chcesz usunac ten post?"}, class: 'btn btn-primary' %>
+        <%= link_to "Powrót", admin_news_path(@news), class: 'btn btn-primary' %>
+      <% else %>
+        <%= link_to "Powrót", admin_root_path, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <%= csrf_meta_tag %>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <%= yield :meta_header %>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media="all" -->
+  <%= stylesheet_link_tag "admin" %>
+
+  <%= javascript_include_tag "application" %>
+  <%= yield :head %>
+</head>
+
+<body class="<%= controller_name %>-controller <%= action_name %>-action">
+  <%= render 'layouts/header' %>
+
+  <div class='container_24'>
+    <div class='grid_24'>
+      <div id='flash-messages'>
+        <% if notice %>
+          <p class="notice"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert"><%= alert %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div id='admin-content'>
+    <div class='container_24'>
+      <div class='grid_24'>
+        <div class='top-left-edge'>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    <div class='clear'></div>
+  </div>
+
+  <%= yield :javascripts %></body>
+</html>

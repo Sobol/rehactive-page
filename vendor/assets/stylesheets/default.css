@@ -186,8 +186,8 @@ header {
 }
 
 .post img {
-	float: left;
-	padding: 15px 0px;
+  max-width: 100%;
+  height: auto;
 }
 
 .post .news-show-link,

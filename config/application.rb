@@ -2,12 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-if defined?(Bundler)
-  # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
-  # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
-end
+Bundler.require(:default, Rails.env)
 
 module RehactivePage
   class Application < Rails::Application
@@ -16,7 +11,7 @@ module RehactivePage
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    # config.autoload_paths += %W(#{config.root}/extras)
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -44,16 +39,34 @@ module RehactivePage
     # like if you have constraints or database-specific column types
     # config.active_record.schema_format = :sql
 
-    # Enforce whitelist mode for mass assignment.
-    # This will create an empty whitelist of attributes available for mass-assignment for all models
-    # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
-    # parameters by using an attr_accessible or attr_protected declaration.
-    # config.active_record.whitelist_attributes = true
-
     # Enable the asset pipeline
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.assets.initialize_on_precompile = false
+    config.active_record.whitelist_attributes = false
+
+
+    config.paperclip_defaults = {
+      :storage => :s3,
+      :url => ':s3_alias_url',
+      :s3_protocol => 'http',
+      :s3_host_alias => ENV["S3_HOST"],
+      :s3_headers => {
+        :cache_control => "max-age=#{364.days.to_i}",
+      },
+      :s3_permissions => :public_read,
+      :processors => [:thumbnail, :image_compressor],
+      :convert_options => {
+        all: "-quality 75"
+      },
+      :use_timestamp => false,
+      :s3_credentials => {
+        :bucket => ENV["S3_BUCKET_NAME"],
+        :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+        :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      }
+    }
   end
 end

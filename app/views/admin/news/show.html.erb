@@ -1,0 +1,17 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><%= @news.title%></h2>
+			<p class="byline">Dodano <%= @news.created_at %></p>
+			<div class="entry">
+				<p><%= @news.content.html_safe %></p>
+			</div>
+		</div>
+	</div>
+</div>
+<br/>
+<br/>
+<div class="actions">
+  <%= link_to "Edytuj", edit_admin_news_path(@news), class: 'btn btn-primary' %>
+  <%= link_to "Cofnij", admin_root_path, class: 'btn btn-primary'  %>
+</div>
