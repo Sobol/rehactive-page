@@ -46,7 +46,6 @@ module RehactivePage
     config.assets.version = '1.0'
     config.assets.initialize_on_precompile = false
     config.active_record.whitelist_attributes = false
-    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
     config.assets.precompile += %w(
       admin.css
       ckeditor/*
