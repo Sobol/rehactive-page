@@ -20,8 +20,8 @@
 //= require jquery.easing.1.3
 //= require jquery_ujs
 //= require jquery.galleryview-3.0-dev
-//= require ckeditor/init
 //= require ckeditor/override
+//= require ckeditor/init
 //= require_tree .
 
 $(function() {
