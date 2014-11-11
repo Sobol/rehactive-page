@@ -1,0 +1,5 @@
+<tr class="<%= klass %>">
+  <td><%= link_to news.title, admin_news_path(news) %></td>
+  <td class="date"><%= news.created_at %></td>
+  <td class="content short-content"><%= news.short_body_without_html %></td>
+</tr>

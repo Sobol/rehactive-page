@@ -20,6 +20,8 @@
 //= require jquery.easing.1.3
 //= require jquery_ujs
 //= require jquery.galleryview-3.0-dev
+//= require ckeditor/init
+//= require ckeditor/override
 //= require_tree .
 
 $(function() {
@@ -28,7 +30,7 @@ $(function() {
     panel_height: 330,
     autoplay: true
   });
-  
+
   $(".more").click(function(e){
     e.preventDefault();
 

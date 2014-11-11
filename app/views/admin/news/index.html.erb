@@ -1,0 +1,32 @@
+<h1>Artykuły (<%= @news.count %>)</h1>
+<%= link_to "Dodaj Artykuł", new_admin_news_path, class: 'btn btn-primary' %>
+<br/>
+<br/>
+
+<table class="list">
+  <thead>
+    <tr>
+      <td>Tytuł</td>
+      <td>Data Utworzenia</td>
+      <td class="short-content">Początek artykułu</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% for news in @news do %>
+      <%= render :partial => 'news', :locals => {:news => news, :klass => cycle('odd', 'even')} %>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Tytuł</td>
+      <td>Data Utworzenia</td>
+      <td class="short-content">Początek artykułu</td>
+    </tr>
+  </tfoot>
+</table>
+
+<div class='clear'></div>
+<div class='pagination'>
+  <%= will_paginate @news %>
+</div>
+<div class='clear'></div>
